@@ -46,7 +46,7 @@ public class Main {
         String phonenumber =scanner.nextLine();
       int index= phoneBookManagement.findPhoneBook(phonenumber);
       if (index!=-1){
-          phoneBookManagement.findPhoneBook(phonenumber);
+          System.out.println(phoneBookManagement.getPhoneBooks().get(index));
         }else {
           System.out.println("không tìm thấy SDT");
       }
